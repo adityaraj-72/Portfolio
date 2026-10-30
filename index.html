@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aditya Raj | Electrical Engineering Student | NIT Patna</title>
+  <meta name="description" content="Portfolio of Aditya Raj, an Electrical Engineering student at NIT Patna showcasing engineering, programming, robotics, web development and technical projects.">
+  <meta name="author" content="Aditya Raj">
+  <meta name="keywords" content="Aditya Raj, NIT Patna, Electrical Engineering, Embedded Systems, Robotics, Arduino, Web Development, MERN, Python, MATLAB, Simulink, Portfolio">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Aditya Raj | Electrical Engineering Student | NIT Patna">
+  <meta property="og:description" content="Portfolio of Aditya Raj, an Electrical Engineering student at NIT Patna showcasing engineering, programming, robotics, web development and technical projects.">
+  <meta name="theme-color" content="#0a0f1d">
+
+  <!-- Google Fonts: Space Grotesk, Inter, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Scroll Progress Bar -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Background Animated Engineering Grid -->
+  <canvas id="circuit-canvas" aria-hidden="true"></canvas>
+
+  <!-- Subtle Blueprint Grid Overlay -->
+  <div class="grid-overlay" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       NAVIGATION BAR
+       ========================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <!-- Logo / Brand -->
+      <a href="#home" class="nav-brand" aria-label="Aditya Raj Home">
+        <div class="brand-icon" aria-hidden="true">AR</div>
+        <div class="brand-name">
+          <span class="brand-title">Aditya Raj</span>
+          <span class="brand-subtitle">EE @ NIT Patna</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#resume" class="nav-link">Resume</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions (Theme Switcher & Mobile Menu) -->
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle Dark and Light Mode" title="Toggle Theme">
+          <!-- Sun Icon (dark mode) -->
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon (light mode) -->
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Mobile Hamburger Button -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION
+         ========================================================================== -->
+    <section class="hero-section" id="home">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Left Column: Content -->
+          <div class="hero-content reveal-fade-up">
+            
+            <!-- Student Status Pill -->
+            <div class="status-badge">
+              <span class="pulse-dot"></span>
+              <span>Electrical Engineering Student @ NIT Patna</span>
+            </div>
+
+            <!-- Greeting & Name -->
+            <div class="hero-salutation">Hello, I'm</div>
+            <h1 class="hero-name">Aditya Raj</h1>
+
+            <!-- Subtitle -->
+            <div class="hero-subheading">
+              <span>Electrical Engineering Student @</span>
+              <span class="nitp-highlight">NIT Patna</span>
+            </div>
+
+            <!-- Professional Tagline -->
+            <div class="hero-tagline">
+              <span>Engineering</span>
+              <span class="tagline-sep">•</span>
+              <span>Technology</span>
+              <span class="tagline-sep">•</span>
+              <span>Development</span>
+              <span class="tagline-sep">•</span>
+              <span>Problem Solving</span>
+            </div>
+
+            <!-- Professional Bio -->
+            <p class="hero-bio">
+              I am an Electrical Engineering student interested in combining core engineering knowledge with programming and modern technology to build practical solutions.
+            </p>
+
+            <!-- Three CTA Buttons -->
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn btn-primary">
+                <span>View My Projects</span>
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="assets/Aditya_Raj_Resume.pdf" download="Aditya_Raj_Resume.pdf" class="btn btn-secondary">
+                <span>Download Resume</span>
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+              </a>
+              <a href="#contact" class="btn btn-outline">
+                <span>Contact Me</span>
+              </a>
+            </div>
+
+            <!-- Clickable Social & Contact Links -->
+            <div class="hero-socials">
+              <!-- GitHub -->
+              <a href="https://github.com/adityaraj-72" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub Profile" aria-label="GitHub Profile">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </a>
+              <!-- LinkedIn -->
+              <a href="https://www.linkedin.com/in/aditya-raj-268302380/" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn Profile" aria-label="LinkedIn Profile">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </a>
+              <!-- Email -->
+              <a href="mailto:adityar.ug24.ee@nitp.ac.in" class="social-link" title="Email Aditya Raj" aria-label="Email Aditya Raj">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Student Profile Card (Clean, Authentic, No Fake Photo) -->
+          <div class="hero-visual reveal-fade-up delay-1">
+            <div class="student-card">
+              
+              <!-- Card Top Header -->
+              <div class="student-card-header">
+                <span class="student-institute-badge">NIT Patna • EE</span>
+                <span class="student-status-pill">
+                  <span class="student-status-dot"></span>
+                  <span>Active Student</span>
+                </span>
+              </div>
+
+              <!-- Avatar Monogram -->
+              <div class="student-avatar-wrap">
+                <span class="student-monogram">AR</span>
+              </div>
+
+              <!-- Identity Details -->
+              <div class="student-profile-info">
+                <h3 class="student-card-name">Aditya Raj</h3>
+                <p class="student-card-role">B.Tech Undergrad • Electrical Engineering</p>
+              </div>
+
+              <!-- Academic Meta Grid -->
+              <div class="student-meta-grid">
+                <div class="student-meta-item">
+                  <div class="student-meta-label">Degree</div>
+                  <div class="student-meta-val">B.Tech EE</div>
+                </div>
+                <div class="student-meta-item">
+                  <div class="student-meta-label">Institute</div>
+                  <div class="student-meta-val">NIT Patna</div>
+                </div>
+                <div class="student-meta-item">
+                  <div class="student-meta-label">Current CGPA</div>
+                  <div class="student-meta-val">7.59</div>
+                </div>
+                <div class="student-meta-item">
+                  <div class="student-meta-label">Graduation</div>
+                  <div class="student-meta-val">2026</div>
+                </div>
+              </div>
+
+              <!-- Quick Focus Tags -->
+              <div class="student-quick-tags">
+                <span class="student-quick-tag">Hardware</span>
+                <span class="student-quick-tag">Arduino</span>
+                <span class="student-quick-tag">Python</span>
+                <span class="student-quick-tag">Web Dev</span>
+                <span class="student-quick-tag">Robotics</span>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ABOUT ME SECTION
+         ========================================================================== -->
+    <section class="section" id="about">
+      <div class="container">
+        
+        <div class="section-header reveal-fade-up">
+          <div class="section-tag">About Me</div>
+          <h2 class="section-title">Background & Interests</h2>
+          <p class="section-subtitle">A bit about my journey, technical interests, and what drives my engineering work.</p>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Narrative Column -->
+          <div class="about-text reveal-fade-up delay-1">
+            <p>
+              I am <strong>Aditya Raj</strong>, pursuing B.Tech in Electrical Engineering at <strong>National Institute of Technology Patna</strong>.
+            </p>
+            <p>
+              My interests span Electrical Engineering, programming, web development, embedded systems, robotics, simulation, and technology.
+            </p>
+            <p>
+              I have worked on projects involving web development, Arduino-based robotics, sensors, embedded programming, and computer-vision/image-processing concepts.
+            </p>
+            <p>
+              I enjoy learning new technologies, solving technical problems, and applying engineering concepts to practical projects.
+            </p>
+
+            <!-- Technical Focus Highlights -->
+            <div class="about-highlights-grid">
+              
+              <div class="highlight-box">
+                <svg class="highlight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+                <h4 class="highlight-title">Electrical Engineering</h4>
+                <p class="highlight-desc">Core circuits, power systems, control engineering, and MATLAB/Simulink simulation.</p>
+              </div>
+
+              <div class="highlight-box">
+                <svg class="highlight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                  <rect x="9" y="9" width="6" height="6"></rect>
+                  <line x1="9" y1="1" x2="9" y2="4"></line>
+                  <line x1="15" y1="1" x2="15" y2="4"></line>
+                  <line x1="9" y1="20" x2="9" y2="23"></line>
+                  <line x1="15" y1="20" x2="15" y2="23"></line>
+                </svg>
+                <h4 class="highlight-title">Embedded Systems & Robotics</h4>
+                <p class="highlight-desc">Microcontroller programming, Arduino, sensor integration, and motor control.</p>
+              </div>
+
+              <div class="highlight-box">
+                <svg class="highlight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+                <h4 class="highlight-title">Programming & Software</h4>
+                <p class="highlight-desc">Object-oriented programming in Java, Python scripting, and web development fundamentals.</p>
+              </div>
+
+              <div class="highlight-box">
+                <svg class="highlight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+                <h4 class="highlight-title">Vision & Image Processing</h4>
+                <p class="highlight-desc">Perspective transforms, color-space thresholding, and morphological contour detection.</p>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Quick Information Card -->
+          <div class="about-sidebar reveal-fade-up delay-2">
+            <div class="info-card">
+              <div class="info-card-header">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+                <h3 class="info-card-title">Quick Information</h3>
+              </div>
+
+              <ul class="info-list">
+                <li class="info-item">
+                  <span class="info-label">Name</span>
+                  <span class="info-val">Aditya Raj</span>
+                </li>
+                <li class="info-item">
+                  <span class="info-label">Degree</span>
+                  <span class="info-val">B.Tech — Electrical Engineering</span>
+                </li>
+                <li class="info-item">
+                  <span class="info-label">Institute</span>
+                  <span class="info-val">NIT Patna</span>
+                </li>
+                <li class="info-item">
+                  <span class="info-label">Current CGPA</span>
+                  <span class="info-val highlight">7.59</span>
+                </li>
+                <li class="info-item">
+                  <span class="info-label">Email</span>
+                  <a href="mailto:adityar.ug24.ee@nitp.ac.in" class="info-val">adityar.ug24.ee@nitp.ac.in</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         EDUCATION SECTION
+         ========================================================================== -->
+    <section class="section" id="education">
+      <div class="container">
+        
+        <div class="section-header reveal-fade-up">
+          <div class="section-tag">Education</div>
+          <h2 class="section-title">Academic Background</h2>
+          <p class="section-subtitle">Academic qualifications and coursework from school to engineering degree.</p>
+        </div>
+
+        <div class="timeline-container">
+          
+          <!-- B.Tech in Electrical Engineering -->
+          <div class="timeline-item reveal-fade-up">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <div>
+                  <h3 class="timeline-degree">B.Tech in Electrical Engineering</h3>
+                  <div class="timeline-institution">
+                    <svg style="width:16px;height:16px;color:var(--accent-cyan);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                      <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                    </svg>
+                    <span>National Institute of Technology Patna</span>
+                  </div>
+                </div>
+                <div class="timeline-badge">Year: 2026</div>
+              </div>
+              <div class="timeline-score">
+                <span>Current CGPA:</span>
+                <strong>7.59</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- Senior Secondary - CBSE -->
+          <div class="timeline-item reveal-fade-up delay-1">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <div>
+                  <h3 class="timeline-degree">Senior Secondary — CBSE</h3>
+                  <div class="timeline-institution">
+                    <svg style="width:16px;height:16px;color:var(--accent-cyan);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                      <line x1="16" y1="2" x2="16" y2="6"></line>
+                      <line x1="8" y1="2" x2="8" y2="6"></line>
+                      <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                    <span>Central Board of Secondary Education</span>
+                  </div>
+                </div>
+                <div class="timeline-badge">Year: 2023</div>
+              </div>
+              <div class="timeline-score">
+                <span>Percentage:</span>
+                <strong>76.6%</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- Secondary - CBSE -->
+          <div class="timeline-item reveal-fade-up delay-2">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <div>
+                  <h3 class="timeline-degree">Secondary — CBSE</h3>
+                  <div class="timeline-institution">
+                    <svg style="width:16px;height:16px;color:var(--accent-cyan);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                      <line x1="16" y1="2" x2="16" y2="6"></line>
+                      <line x1="8" y1="2" x2="8" y2="6"></line>
+                      <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                    <span>Central Board of Secondary Education</span>
+                  </div>
+                </div>
+                <div class="timeline-badge">Year: 2021</div>
+              </div>
+              <div class="timeline-score">
+                <span>Percentage:</span>
+                <strong>92.8%</strong>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         TECHNICAL SKILLS SECTION
+         ========================================================================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        
+        <div class="section-header reveal-fade-up">
+          <div class="section-tag">Skills</div>
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-subtitle">Categorized skills and technologies applied in coursework, projects, and hardware experiments.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="skills-filter-nav reveal-fade-up">
+          <button class="filter-btn active" data-filter="all">All Skills</button>
+          <button class="filter-btn" data-filter="web">Web Development</button>
+          <button class="filter-btn" data-filter="programming">Programming</button>
+          <button class="filter-btn" data-filter="engineering">Engineering / Simulation</button>
+          <button class="filter-btn" data-filter="hardware">Hardware & Embedded</button>
+          <button class="filter-btn" data-filter="vision">Vision & Image Processing</button>
+          <button class="filter-btn" data-filter="tools">Development Tools</button>
+        </div>
+
+        <!-- Categorized Skills Grid -->
+        <div class="skills-categories-grid">
+
+          <!-- Web Development -->
+          <div class="skill-category-card reveal-fade-up" data-category="web">
+            <div class="category-header">
+              <div class="category-icon-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="category-title">Web Development</h3>
+            </div>
+            <div class="skills-chips-wrapper">
+              <div class="skill-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                <span>MERN Stack</span>
+              </div>
+              <div class="skill-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="4 2 20 2 18 19 12 22 6 19 4 2"></polygon></svg>
+                <span>HTML</span>
+              </div>
+              <div class="skill-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+                <span>CSS</span>
+              </div>
+              <div class="skill-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+                <span>JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Programming -->
+          <div class="skill-category-card reveal-fade-up delay-1" data-category="programming">
+            <div class="category-header">
+              <div class="category-icon-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                </svg>
+              </div>
+              <h3 class="category-title">Programming</h3>
+            </div>
+            <div class="skills-chips-wrapper">
+              <div class="skill-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                <span>Java</span>
+              </div>
+              <div class="skill-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10H12V2z"></path></svg>
+                <span>Python</span>
+              </div>
+              <div class="skill-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 7 4 4 20 4 20 7"></polyline><line x1="9" y1="20" x2="15" y2="20"></line><line x1="12" y1="4" x2="12" y2="20"></line></svg>
+                <span>Embedded C</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Engineering / Simulation -->
+          <div class="skill-category-card reveal-fade-up delay-2" data-category="engineering">
+            <div class="category-header">
+              <div class="category-icon-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 3v18h18"></path>
+                  <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"></path>
+                </svg>
+              </div>
+              <h3 class="category-title">Engineering / Simulation</h3>
+            </div>
+            <div class="skills-chips-wrapper">
+              <div class="skill-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                <span>MATLAB</span>
+              </div>
+              <div class="skill-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                <span>Simulink</span>
+              </div>
+              <div class="skill-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                <span>Simulation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hardware & Embedded Systems -->
+          <div class="skill-category-card reveal-fade-up" data-category="hardware">
+            <div class="category-header">
+              <div class="category-icon-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                  <circle cx="9" cy="9" r="2"></circle>
+                  <path d="M15 9h.01"></path>
+                  <path d="M15 15h.01"></path>
+                  <path d="M9 15h.01"></path>
+                </svg>
+              </div>
+              <h3 class="category-title">Hardware & Embedded Systems</h3>
+            </div>
+            <div class="skills-chips-wrapper">
+              <div class="skill-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                <span>Arduino</span>
+              </div>
+              <div class="skill-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path></svg>
+                <span>IR Sensors</span>
+              </div>
+              <div class="skill-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle><path d="M12 3v18"></path><path d="M3 12h18"></path></svg>
+                <span>Motor Driver</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Vision & Image Processing -->
+          <div class="skill-category-card reveal-fade-up delay-1" data-category="vision">
+            <div class="category-header">
+              <div class="category-icon-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+              </div>
+              <h3 class="category-title">Vision & Image Processing</h3>
+            </div>
+            <div class="skills-chips-wrapper">
+              <div class="skill-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+                <span>Image Processing</span>
+              </div>
+              <div class="skill-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+                <span>Computer Vision concepts</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Development Tools -->
+          <div class="skill-category-card reveal-fade-up delay-2" data-category="tools">
+            <div class="category-header">
+              <div class="category-icon-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+              <h3 class="category-title">Development Tools</h3>
+            </div>
+            <div class="skills-chips-wrapper">
+              <div class="skill-chip">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>GitHub</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PROJECTS SECTION
+         ========================================================================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        
+        <div class="section-header reveal-fade-up">
+          <div class="section-tag">Projects</div>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Practical work across embedded robotics, computer vision, and web development.</p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- PROJECT 03: Prominently Displayed (E-Yantra Krishi Drone) -->
+          <article class="project-card featured-project reveal-fade-up" id="project-krishi-drone">
+            
+            <!-- Left: Graphic Diagram Placeholder -->
+            <div class="project-preview">
+              <span class="preview-badge-overlay">Prominent Project • Computer Vision</span>
+              <div class="preview-graphic-container">
+                <!-- Clean Vision Pipeline Schematic SVG -->
+                <svg class="preview-diagram" viewBox="0 0 200 140" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <polygon points="40,25 160,25 185,115 15,115" stroke="var(--accent-cyan)" stroke-dasharray="3 3" opacity="0.6"></polygon>
+                  <line x1="100" y1="25" x2="100" y2="115" stroke="var(--accent-cyan)" opacity="0.4"></line>
+                  <line x1="70" y1="25" x2="57" y2="115" stroke="var(--accent-cyan)" opacity="0.4"></line>
+                  <line x1="130" y1="25" x2="143" y2="115" stroke="var(--accent-cyan)" opacity="0.4"></line>
+                  <circle cx="100" cy="70" r="18" stroke="var(--accent-cyan)" stroke-width="2"></circle>
+                  <circle cx="100" cy="70" r="6" fill="var(--accent-cyan)"></circle>
+                  <line x1="100" y1="46" x2="100" y2="58" stroke="var(--accent-cyan)" stroke-width="2"></line>
+                  <line x1="100" y1="82" x2="100" y2="94" stroke="var(--accent-cyan)" stroke-width="2"></line>
+                  <line x1="76" y1="70" x2="88" y2="70" stroke="var(--accent-cyan)" stroke-width="2"></line>
+                  <line x1="112" y1="70" x2="124" y2="70" stroke="var(--accent-cyan)" stroke-width="2"></line>
+                  <text x="100" y="132" fill="var(--accent-cyan)" font-size="8" font-family="monospace" text-anchor="middle">PERSPECTIVE MAPPING & CONTOUR PIPELINE</text>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Right: Project Information -->
+            <div class="project-body">
+              <div>
+                <div class="project-meta-top">
+                  <span class="project-category-tag">Vision & Robotics</span>
+                  <span class="project-date">December 2024</span>
+                </div>
+
+                <h3 class="project-title">E-Yantra Krishi Drone: Vision-Based Infected Plant Detection System</h3>
+                
+                <p class="project-desc">
+                  Autonomous vision-based detection system designed to inspect plant beds and detect infected plants using camera input and image processing techniques.
+                </p>
+
+                <!-- Key Contributions -->
+                <ul class="project-contributions">
+                  <li class="contribution-item">
+                    <svg class="contribution-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Implemented perspective transformation to obtain a top/bird's-eye view of plant beds from camera input.</span>
+                  </li>
+                  <li class="contribution-item">
+                    <svg class="contribution-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Designed an image-processing pipeline for detecting infected plants using color-space analysis and thresholding.</span>
+                  </li>
+                  <li class="contribution-item">
+                    <svg class="contribution-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Applied contour detection and morphological operations to isolate affected regions.</span>
+                  </li>
+                </ul>
+
+                <!-- Technologies -->
+                <div class="project-tech-tags">
+                  <span class="tech-tag">Arduino</span>
+                  <span class="tech-tag">IR Sensors</span>
+                  <span class="tech-tag">Embedded C</span>
+                  <span class="tech-tag">Motor Driver</span>
+                  <span class="tech-tag">Image Processing</span>
+                </div>
+              </div>
+
+              <!-- Action Buttons -->
+              <div class="project-actions">
+                <button type="button" class="btn btn-primary btn-sm view-project-details-btn" data-project-id="krishi-drone">
+                  <span>View Details</span>
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </button>
+              </div>
+
+            </div>
+
+          </article>
+
+          <!-- PROJECT 02: Line Follower Robot -->
+          <article class="project-card reveal-fade-up" id="project-line-follower">
+            
+            <!-- Left: Graphic Diagram Placeholder -->
+            <div class="project-preview">
+              <span class="preview-badge-overlay">Autonomous Robotics</span>
+              <div class="preview-graphic-container">
+                <!-- Line Tracker Schematic SVG -->
+                <svg class="preview-diagram" viewBox="0 0 200 140" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M 20 110 Q 70 30 100 80 T 180 30" stroke="var(--border-subtle)" stroke-width="6" stroke-linecap="round"></path>
+                  <path d="M 20 110 Q 70 30 100 80 T 180 30" stroke="var(--accent-blue)" stroke-width="2.5" stroke-linecap="round"></path>
+                  <rect x="85" y="65" width="30" height="40" rx="4" fill="var(--bg-card)" stroke="var(--accent-cyan)" stroke-width="2"></rect>
+                  <rect x="79" y="70" width="5" height="12" rx="2" fill="var(--accent-cyan)"></rect>
+                  <rect x="116" y="70" width="5" height="12" rx="2" fill="var(--accent-cyan)"></rect>
+                  <circle cx="94" cy="69" r="2.5" fill="var(--accent-cyan)"></circle>
+                  <circle cx="106" cy="69" r="2.5" fill="var(--accent-cyan)"></circle>
+                  <line x1="94" y1="66" x2="94" y2="61" stroke="var(--accent-cyan)" stroke-width="1.5" stroke-dasharray="2 2"></line>
+                  <line x1="106" y1="66" x2="106" y2="61" stroke="var(--accent-cyan)" stroke-width="1.5" stroke-dasharray="2 2"></line>
+                  <text x="100" y="132" fill="var(--accent-cyan)" font-size="8" font-family="monospace" text-anchor="middle">DYNAMIC SENSOR PATH TRACKING</text>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Right: Project Information -->
+            <div class="project-body">
+              <div>
+                <div class="project-meta-top">
+                  <span class="project-category-tag">Embedded Systems</span>
+                  <span class="project-date">December 2024</span>
+                </div>
+
+                <h3 class="project-title">Line Follower Robot</h3>
+                
+                <p class="project-desc">
+                  Autonomous robot capable of detecting and following a predefined path using IR sensors and dynamic microcontroller motor control.
+                </p>
+
+                <!-- Key Contributions -->
+                <ul class="project-contributions">
+                  <li class="contribution-item">
+                    <svg class="contribution-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Built an autonomous robot capable of detecting and following a predefined path using IR sensors.</span>
+                  </li>
+                  <li class="contribution-item">
+                    <svg class="contribution-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Programmed the Arduino microcontroller to process sensor inputs and dynamically control motor speed.</span>
+                  </li>
+                  <li class="contribution-item">
+                    <svg class="contribution-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Used a motor driver module for movement and direction control.</span>
+                  </li>
+                  <li class="contribution-item">
+                    <svg class="contribution-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Calibrated sensors to improve path detection accuracy and reduce deviation.</span>
+                  </li>
+                </ul>
+
+                <!-- Technologies -->
+                <div class="project-tech-tags">
+                  <span class="tech-tag">Arduino</span>
+                  <span class="tech-tag">IR Sensors</span>
+                  <span class="tech-tag">Embedded C</span>
+                  <span class="tech-tag">Motor Driver</span>
+                </div>
+              </div>
+
+              <!-- Action Buttons -->
+              <div class="project-actions">
+                <button type="button" class="btn btn-secondary btn-sm view-project-details-btn" data-project-id="line-follower">
+                  <span>View Details</span>
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </button>
+              </div>
+
+            </div>
+
+          </article>
+
+          <!-- PROJECT 01: Personal Portfolio Website -->
+          <article class="project-card reveal-fade-up" id="project-portfolio">
+            
+            <!-- Left: Graphic Diagram Placeholder -->
+            <div class="project-preview">
+              <span class="preview-badge-overlay">Web Development</span>
+              <div class="preview-graphic-container">
+                <!-- Browser Wireframe SVG -->
+                <svg class="preview-diagram" viewBox="0 0 200 140" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <rect x="25" y="20" width="150" height="96" rx="4" stroke="var(--accent-cyan)" stroke-width="1.5"></rect>
+                  <circle cx="35" cy="30" r="2" fill="var(--accent-cyan)"></circle>
+                  <circle cx="43" cy="30" r="2" fill="var(--accent-cyan)"></circle>
+                  <circle cx="51" cy="30" r="2" fill="var(--accent-cyan)"></circle>
+                  <line x1="25" y1="38" x2="175" y2="38" stroke="var(--border-subtle)"></line>
+                  <rect x="35" y="46" width="60" height="8" rx="2" fill="var(--accent-cyan)" opacity="0.4"></rect>
+                  <rect x="35" y="60" width="80" height="6" rx="1" fill="var(--text-muted)" opacity="0.3"></rect>
+                  <rect x="35" y="72" width="70" height="6" rx="1" fill="var(--text-muted)" opacity="0.3"></rect>
+                  <rect x="125" y="46" width="40" height="36" rx="3" stroke="var(--accent-cyan)" stroke-dasharray="2 2"></rect>
+                  <rect x="35" y="88" width="30" height="12" rx="2" fill="var(--accent-cyan)"></rect>
+                  <text x="100" y="132" fill="var(--accent-cyan)" font-size="8" font-family="monospace" text-anchor="middle">RESPONSIVE UI ARCHITECTURE</text>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Right: Project Information -->
+            <div class="project-body">
+              <div>
+                <div class="project-meta-top">
+                  <span class="project-category-tag">Front-End Development</span>
+                  <span class="project-date">January 2026</span>
+                </div>
+
+                <h3 class="project-title">Personal Portfolio Website</h3>
+                
+                <p class="project-desc">
+                  Designed and developed a responsive personal portfolio website to showcase projects and technical skills.
+                </p>
+
+                <!-- Key Contributions -->
+                <ul class="project-contributions">
+                  <li class="contribution-item">
+                    <svg class="contribution-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Designed and developed a responsive personal portfolio website to showcase projects and technical skills.</span>
+                  </li>
+                  <li class="contribution-item">
+                    <svg class="contribution-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Implemented structured sections including Experience, Education, and Contact with a clean UI design.</span>
+                  </li>
+                  <li class="contribution-item">
+                    <svg class="contribution-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Applied CSS styling and layout techniques to ensure cross-device compatibility.</span>
+                  </li>
+                  <li class="contribution-item">
+                    <svg class="contribution-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Optimized webpage performance and navigation for an improved user experience.</span>
+                  </li>
+                </ul>
+
+                <!-- Technologies -->
+                <div class="project-tech-tags">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">JavaScript</span>
+                </div>
+              </div>
+
+              <!-- Action Buttons -->
+              <div class="project-actions">
+                <a href="https://github.com/adityaraj-72/Portfolio" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" title="View GitHub Repository">
+                  <svg style="width:16px;height:16px;" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>Repository</span>
+                </a>
+                <button type="button" class="btn btn-outline btn-sm view-project-details-btn" data-project-id="portfolio">
+                  <span>View Details</span>
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </button>
+              </div>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ACHIEVEMENTS & CERTIFICATIONS SECTION
+         ========================================================================== -->
+    <section class="section" id="achievements">
+      <div class="container">
+        
+        <div class="section-header reveal-fade-up">
+          <div class="section-tag">Achievements</div>
+          <h2 class="section-title">Achievements & Certifications</h2>
+          <p class="section-subtitle">Verified course completions, certifications, and academic milestones.</p>
+        </div>
+
+        <div class="achievements-grid">
+          
+          <!-- The Joy of Computing Using Python -->
+          <div class="achievement-card reveal-fade-up">
+            <div class="achievement-top">
+              <div class="achievement-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="8" r="7"></circle>
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                </svg>
+              </div>
+              <div class="achievement-score-badge">
+                <span class="score-num">90%</span>
+                <span class="score-label">Score</span>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="achievement-title">The Joy of Computing Using Python</h3>
+              <p class="achievement-desc">
+                Completed "The Joy of Computing Using Python" with a score of 90%.
+              </p>
+            </div>
+          </div>
+
+          <!-- Future Milestone Card (Easily Extensible) -->
+          <div class="achievement-card future-card reveal-fade-up delay-1">
+            <div class="achievement-top">
+              <div class="achievement-icon-wrap" style="border-style:dashed;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </div>
+              <div class="achievement-score-badge">
+                <span class="score-num" style="color:var(--text-muted);font-size:1.1rem;">In Progress</span>
+                <span class="score-label">Future Milestone</span>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="achievement-title" style="color:var(--text-secondary);">Upcoming Certifications</h3>
+              <p class="achievement-desc">
+                Preparing for additional technical coursework in embedded systems, power electronics, and software development.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         EXPERIENCE SECTION (Expandable / Future-Ready)
+         ========================================================================== -->
+    <section class="section" id="experience">
+      <div class="container">
+        
+        <div class="section-header reveal-fade-up">
+          <div class="section-tag">Experience</div>
+          <h2 class="section-title">Experience</h2>
+          <p class="section-subtitle">Practical engineering learning and future opportunities.</p>
+        </div>
+
+        <div class="experience-banner reveal-fade-up">
+          <div class="exp-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+            </svg>
+          </div>
+          <div class="exp-text-content">
+            <h3>Currently Building Experience</h3>
+            <p>
+              Currently building experience through academic learning, technical projects, and hands-on engineering work.
+            </p>
+          </div>
+          <div>
+            <a href="#contact" class="btn btn-secondary btn-sm">Get In Touch</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         RESUME SECTION
+         ========================================================================== -->
+    <section class="section resume-section" id="resume">
+      <div class="container">
+        
+        <div class="resume-cta-card reveal-fade-up">
+          <div class="section-tag">Resume</div>
+          <h2 class="resume-heading">Want to know more?</h2>
+          <p class="resume-desc">
+            Explore my complete academic background, technical skills, projects, and achievements through my resume.
+          </p>
+
+          <div class="resume-actions-group">
+            <a href="assets/Aditya_Raj_Resume.pdf" download="Aditya_Raj_Resume.pdf" class="btn btn-primary">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Download Resume ↓</span>
+            </a>
+            <a href="assets/Aditya_Raj_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+              <span>Open in Fullscreen ↗</span>
+            </a>
+          </div>
+
+          <div class="resume-file-note">
+            <svg style="width:14px;height:14px;color:var(--accent-cyan);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="16" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12.01" y2="8"></line>
+            </svg>
+            <span>Official NIT Patna PDF Resume • 434 KB</span>
+          </div>
+
+          <!-- Inline Document Viewer -->
+          <div class="resume-preview-wrapper reveal-fade-up delay-1">
+            <div class="resume-preview-toolbar">
+              <div class="resume-toolbar-title">
+                <svg style="width:16px;height:16px;color:var(--accent-cyan);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                </svg>
+                <span>Aditya_Raj_Resume.pdf</span>
+              </div>
+              <div class="resume-toolbar-actions">
+                <a href="assets/Aditya_Raj_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" style="padding:4px 10px;font-size:0.75rem;">
+                  <span>Fullscreen ↗</span>
+                </a>
+                <a href="assets/Aditya_Raj_Resume.pdf" download="Aditya_Raj_Resume.pdf" class="btn btn-primary btn-sm" style="padding:4px 10px;font-size:0.75rem;">
+                  <span>Download ↓</span>
+                </a>
+              </div>
+            </div>
+            <iframe src="assets/Aditya_Raj_Resume.pdf#toolbar=0&navpanes=0" class="resume-embed-frame" title="Aditya Raj Resume Document">
+              <p style="padding:20px;text-align:center;color:var(--text-secondary);">
+                Preview not supported by your browser. 
+                <a href="assets/Aditya_Raj_Resume.pdf" download="Aditya_Raj_Resume.pdf" class="btn btn-primary btn-sm" style="margin-top:10px;">Download Resume PDF</a>
+              </p>
+            </iframe>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CONTACT SECTION
+         ========================================================================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        
+        <div class="section-header reveal-fade-up">
+          <div class="section-tag">Contact</div>
+          <h2 class="section-title">Let's Connect</h2>
+          <p class="section-subtitle">I'm always open to discussing technology, engineering projects, internship opportunities, and new ideas. Feel free to reach out.</p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Left Column: Direct Contact Info -->
+          <div class="contact-info-panel reveal-fade-up">
+            
+            <div class="contact-channels">
+              
+              <!-- Email Card -->
+              <div class="contact-channel-card">
+                <div class="channel-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-type">College Email</span>
+                  <a href="mailto:adityar.ug24.ee@nitp.ac.in" class="channel-value">adityar.ug24.ee@nitp.ac.in</a>
+                </div>
+                <button type="button" class="btn btn-outline btn-sm copy-email-btn" style="margin-left:auto;padding:5px 10px;font-size:0.75rem;" title="Copy email address">
+                  Copy
+                </button>
+              </div>
+
+              <!-- GitHub Card -->
+              <a href="https://github.com/adityaraj-72" target="_blank" rel="noopener noreferrer" class="contact-channel-card">
+                <div class="channel-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-type">GitHub</span>
+                  <span class="channel-value">https://github.com/adityaraj-72</span>
+                </div>
+                <svg style="margin-left:auto;width:16px;height:16px;color:var(--text-muted);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+
+              <!-- LinkedIn Card -->
+              <a href="https://www.linkedin.com/in/aditya-raj-268302380/" target="_blank" rel="noopener noreferrer" class="contact-channel-card">
+                <div class="channel-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-type">LinkedIn</span>
+                  <span class="channel-value">aditya-raj-268302380/</span>
+                </div>
+                <svg style="margin-left:auto;width:16px;height:16px;color:var(--text-muted);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+
+              <!-- Phone Card -->
+              <a href="tel:+919508598133" class="contact-channel-card">
+                <div class="channel-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-type">Phone</span>
+                  <span class="channel-value">+91 9508598133</span>
+                </div>
+              </a>
+
+              <!-- Location Info -->
+              <div class="contact-channel-card">
+                <div class="channel-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-type">Location</span>
+                  <span class="channel-value">NIT Patna, Patna, Bihar, India</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Right Column: Clean Contact Form -->
+          <div class="contact-form-container reveal-fade-up delay-1">
+            <form class="contact-form" id="contact-form" novalidate>
+              
+              <div class="form-group">
+                <label for="form-name" class="form-label">Name *</label>
+                <input type="text" id="form-name" class="form-control" placeholder="Your name" required autocomplete="name">
+                <span class="form-feedback">Please enter your name.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="form-email" class="form-label">Email *</label>
+                <input type="email" id="form-email" class="form-control" placeholder="your.email@example.com" required autocomplete="email">
+                <span class="form-feedback">Please enter a valid email address.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="form-subject" class="form-label">Subject *</label>
+                <input type="text" id="form-subject" class="form-control" placeholder="Internship opportunity, project discussion, etc." required>
+                <span class="form-feedback">Please enter a subject.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message" class="form-label">Message *</label>
+                <textarea id="form-message" class="form-control" placeholder="Write your message here..." required></textarea>
+                <span class="form-feedback">Please enter at least 10 characters.</span>
+              </div>
+
+              <div class="form-privacy-note">
+                <small>Sends directly to adityar.ug24.ee@nitp.ac.in</small>
+              </div>
+
+              <button type="submit" class="btn btn-primary" id="form-submit-btn">
+                <span>Send Message</span>
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h4>Aditya Raj</h4>
+          <p>Electrical Engineering | NIT Patna</p>
+        </div>
+
+        <div class="footer-socials">
+          <a href="https://github.com/adityaraj-72" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/aditya-raj-268302380/" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+          </a>
+          <a href="mailto:adityar.ug24.ee@nitp.ac.in" class="social-link" title="Email" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Aditya Raj. All Rights Reserved.</div>
+        <div>National Institute of Technology Patna (NIT Patna)</div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-top-btn" id="scroll-top-btn" aria-label="Scroll back to top" title="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- ==========================================================================
+       PROJECT DETAILS MODAL
+       ========================================================================== -->
+  <div class="modal-backdrop" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-content">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close Project Modal">&times;</button>
+      
+      <div style="margin-bottom: 16px;">
+        <span id="modal-date" style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent-cyan);"></span>
+        <h3 id="modal-title" style="font-size: 1.35rem; font-weight: 700; margin-top: 4px; margin-bottom: 12px; color: var(--text-primary);"></h3>
+        <div id="modal-tags" style="display:flex; flex-wrap:wrap; gap:6px; margin-bottom: 18px;"></div>
+      </div>
+
+      <div id="modal-body"></div>
+
+      <div id="modal-links" style="display:flex; gap:10px; margin-top:18px; padding-top:14px; border-top:1px solid var(--border-subtle);"></div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       CONTACT SUCCESS DIALOG
+       ========================================================================== -->
+  <div class="modal-backdrop" id="form-success-dialog" role="dialog" aria-modal="true" aria-labelledby="dialog-title">
+    <div class="modal-content" style="max-width: 480px; text-align: center;">
+      <button class="modal-close-btn" id="form-success-close-btn" aria-label="Close dialog">&times;</button>
+      
+      <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(6,182,212,0.1); border: 1px solid var(--accent-cyan); display: flex; align-items: center; justify-content: center; margin: 0 auto 14px auto; color: var(--accent-cyan);">
+        <svg style="width:24px;height:24px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+      </div>
+
+      <h3 id="dialog-title" style="font-size: 1.25rem; margin-bottom: 8px; color: var(--text-primary);">Ready to Send</h3>
+      <p style="font-size: 0.92rem; color: var(--text-secondary); margin-bottom: 18px; line-height: 1.55;">
+        You can open your default email app with this message pre-filled to guarantee delivery to Aditya's NIT Patna inbox.
+      </p>
+
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+        <a id="prefilled-mailto-btn" href="#" class="btn btn-primary" style="width:100%;">
+          <svg style="width:16px;height:16px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          <span>Open in Email App</span>
+        </a>
+        <button type="button" class="btn btn-outline copy-email-btn" style="width:100%;">
+          <span>Copy Email Address</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <span class="toast-dot"></span>
+    <span class="toast-msg">Copied to clipboard</span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/circuit-canvas.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
